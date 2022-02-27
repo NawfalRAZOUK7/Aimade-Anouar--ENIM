@@ -6,28 +6,34 @@
 body {
     width: 100vw;
     height: 100vh;
+    background-color: #F1F1F1;
 }
 header {
-    background-color:blueviolet;
+
 }
 
 .nav-bar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 20px;
+    column-gap: 14rem;
 }
 
+.title-logo {
+    display: flex;
+    color: blue;
+}
+
+.title-logo span {
+    color: black;
+    background-color: blue;
+}
 .search {
-    width: 100%;
-    position: relative;
     display: flex;
 }
 
 .srch {
-    width: 100%;
-    height: 20px;
+    width: 30rem;
     padding: 5px;
     border-radius: 5px 0 0 5px;
     border: 3px solid aqua;
@@ -37,14 +43,11 @@ header {
 
 .btn {
     cursor: pointer;
-    width: 40px;
-    height: 36px;
     border: 1px solid aqua;
     color: black;
     background: aqua;
     text-align: center;
     border-radius: 0 5px 5px 0;
-    font-size: 20px;
 }
 
 .go-to {
@@ -59,16 +62,8 @@ header {
     align-items: center;
 }
 
-.profil-back {
+.icon-img {
     background-color: blue;
-}
-
-.wallet-back {
-background-color: blue;
-}
-
-.cart-back {
-background-color: blue;    
 }
 
 .icon-title {
@@ -77,16 +72,54 @@ background-color: blue;
 
 main {
     display: flex;
-    background-color: aqua;
     justify-content: space-between;
+    
+}
+
+.filters {
+    
 }
 
 .content {
     background-color: wheat;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.banner {
+    background-color: red;
+    position: relative;
+    padding: 10px;
+}
+
+.image-banner {
+
+}
+
+.title-banner {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+}
+
+.frame-banner {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    left: 15px;
+    bottom: 20px;
+    border: 1px solid white;
 }
 
 .best-selling {
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
 }
 
 .selling {
@@ -100,15 +133,18 @@ main {
 }
 
 .card {
-    background-color: white;
-    border-radius: 20px;
+    border-radius: 10px;
+    background-color: blueviolet;
 }
 
 .image-card img {
-    border-radius: 20px 20px 0 0;
+    border-radius: 10px 10px 0 0;
+    max-width: 100%;
+    height: auto;
 }
 
 .info-card {
+    border-radius: 0 0 10px 10px;
     background-color: aquamarine;
     padding-left: 10px;
     padding-right: 10px;
@@ -131,6 +167,11 @@ main {
 
 .most-search {
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .searched {
